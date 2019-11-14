@@ -4,55 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Eczar:400,700&display=swap" rel="stylesheet">
+  <title>Ресторан & Бар "Веранда"</title>
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f83d95e6b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <nav class="menu">
-      <img src="img/logo.png" alt="Veranda">
-      <ul class="menu__list">
-        <li class="menu__list-item"><a href="#">Пункт 1</a></li>
-        <li class="menu__list-item"><a href="#">Пункт 2</a></li>
-        <li class="menu__list-item"><a href="#">Пункт 3</a></li>
-        <li class="menu__list-item"><a href="#">Пункт 4</a></li>
-        <li class="menu__list-item"><a href="#">Пункт 5</a></li>
-      </ul>
-    </nav>
-    <div class="slider">
-      <div class="slider__item slider__item-1">
-        <div class="container">
-          <h1 class="slider__item-tittle">Ресторан - "Veranda"</h1>
-          <a href="#" class="slider__item-btn">Добро пожаловать</a>
-          <p class="ush">Тестовая версия сайта <span>by USH</span></p>
+    <a name="top"></a>
+    <div id="header__slick" class="header__slick">
+      <div class="header__slick-logo">
+        <img src="img/logo.png" alt="Веранда">
+      </div>
+      <div class="header__slick-btn">
+          <a href="#top">На верх</a>
+      </div>
+    </div>  
+
+    <div class="container">
+      <div class="nav">
+        <div class="nav__logo">
+          <img src="img/logo.png" alt="Веранда" class="animated bounceInLeft delay-2s">
+        </div>
+        <div class="nav__menu">
+          <a href="#" class="burger animated bounceInRight delay-2s"><span class="burger__item"></span></a>
+          <ul class="nav__menu-list">
+            <img src="img/logo.png" alt="Веранда">
+            <li class="nav__menu-item"><a href="#top" class="nav__menu-link">Главная</a></li>
+            <li class="nav__menu-item"><a href="#about" class="nav__menu-link">Про нас</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Меню</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Мероприятия</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Акции</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Найти нас</a></li>
+          </ul>  
         </div>
       </div>
-      <div class="slider__item slider__item-2">
-        <div class="container">
-          <h2 class="slider__item-tittle">Европейская и Японская кухня</h2>
-          <a href="#" class="slider__item-btn">Меню</a>
-          <p class="ush">Тестовая версия сайта <span>by USH</span></p>
-        </div>
+      <div class="header__info">
+        <p class="header__info-tittle animated bounceInUp delay-3s">Ресторан <span>&</span> Бар</p>
+        <p class="header__info-subtittle animated bounceInDown delay-3s">'Веранда'</p>
       </div>
-      <div class="slider__item slider__item-3">
-        <div class="container">
-          <h2 class="slider__item-tittle">Акции и предложения</h2>
-          <a href="#" class="slider__item-btn">Подробнее</a>
-          <p class="ush">Тестовая версия сайта <span>by USH</span></p>
-        </div>
+      <div class="arrow">
+          <a href="#about"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-2s"></i></a>
       </div>
-      <div class="slider__item slider__item-4">
+    </div>
+  </header>
+  <section class="about">
+    <a name="about"></a>
+    <div class="about__content">
+      <div class="screen">
+        <img src="img/about.jpg" alt="Mmmmmmm">
+      </div>
+      <div class="info">
         <div class="container">
-          <h2 class="slider__item-tittle">хз че. сил уже нету</h2>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="slider__item-btn secret">Не нажимать!!!</a>
-          <p class="ush">Тестовая версия сайта <span>by USH</span></p class="ush">
+          <h2 class="info__tittle">Про нас</h2>
+          <p class="info__subtittle">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, officia.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, dolores.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, dolores.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, non.
+          </p>
         </div>
       </div>
     </div>
-    <a href="#menu" class="menu__active"><span></span></a>
-  </header>
+  </section>
+  <section class="menu">
+    <div class="container">
+      <div class="menu__item">
+        <div class="slider">
+          <div class="slider__item">
+            <img src="img/meet.jpg" alt="Стейк, ммммм вкусняшка" width="100%">
+          </div>
+          <div class="slider__item">
+            <img src="img/salat.jpg" alt="Салатик ниче так" width="100%">
+          </div>
+          <div class="slider__item">
+            <img src="img/fish.jpg" alt="Рыбку аппетитна" width="100%">
+          </div>
+          <div class="slider__item">
+            <img src="img/cheez.jpg" alt="Сладинького на десерт" width="100%">
+          </div>
+        </div>
+        <div class="menu__info">
+          <h2 class="menu__info-tittle">Меню</h2>
+          <p class="menu__info-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusantium!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, atque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, earum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, illum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, illum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   
+  
+  
+  
+  
+  <div class="bottom__panel animated slideInUp delay-4s">
+    <a href="#" class="callback">Cвязаться с нами</a>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-vk"></i></a>
+    </div>
+  </div>
+
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
