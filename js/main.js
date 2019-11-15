@@ -1,6 +1,6 @@
 $(function(){
-    $('.burger').click(function(e){
-        e.preventDefault
+    $('.burger').click(function(event){
+        event.preventDefault();
         $('.burger').toggleClass('burger__active');
         $('.nav__menu-list').toggleClass('nav__menu-active');
         $('.nav__logo').toggleClass('nav__logo-none');
@@ -29,9 +29,17 @@ $(function(){
         slidesToScroll: 1,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 3000,
-        cssEase: 'liner',
+        autoplaySpeed: 2000,
         dots: false,
-        arrows: false
+        arrows: true,
+        nextArrow: '<i class="fas fa-chevron-circle-right arrow__right"></i>',
+        prevArrow: '<i class="fas fa-chevron-circle-left arrow__left"></i>'
       });
+      $(function(){$("a[href*=#]:not([href=#])").click(function(){
+          if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")
+          &&location.hostname==this.hostname){
+              var t=$(this.hash);
+              if(t=t.length?t:
+                $("[name="+this.hash.slice(1)+"]"),t.length)
+                return $("html,body").animate({scrollTop:t.offset().top},5000),!1}})});
 });
