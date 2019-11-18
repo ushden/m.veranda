@@ -1,4 +1,18 @@
 $(function(){
+    $('.nav__menu-link').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#about').offset().top }, 1000);
+        e.preventDefault();
+      });
+
+    $('.reviewSlider').slick ({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+    });
+
     $('.burger').click(function(event){
         event.preventDefault();
         $('.burger').toggleClass('burger__active');
@@ -29,17 +43,12 @@ $(function(){
         slidesToScroll: 1,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: true,
         nextArrow: '<i class="fas fa-chevron-circle-right arrow__right"></i>',
         prevArrow: '<i class="fas fa-chevron-circle-left arrow__left"></i>'
       });
-      $(function(){$("a[href*=#]:not([href=#])").click(function(){
-          if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")
-          &&location.hostname==this.hostname){
-              var t=$(this.hash);
-              if(t=t.length?t:
-                $("[name="+this.hash.slice(1)+"]"),t.length)
-                return $("html,body").animate({scrollTop:t.offset().top},5000),!1}})});
+    
+    
 });

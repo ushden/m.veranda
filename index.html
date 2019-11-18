@@ -13,13 +13,13 @@
 </head>
 <body>
   <header class="header">
-    <a name="top"></a>
+    <a id="top"></a>
     <div id="header__slick" class="header__slick">
       <div class="header__slick-logo">
         <img src="img/logo.png" alt="Веранда">
       </div>
       <div class="header__slick-btn">
-          <a href="#top">На верх</a>
+          <a href="#top" class="header__slick-link">На верх</a>
       </div>
     </div>  
 
@@ -32,12 +32,11 @@
           <a href="#" class="burger animated bounceInRight delay-2s"><span class="burger__item"></span></a>
           <ul class="nav__menu-list" id="menu">
             <img src="img/logo.png" alt="Веранда">
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Главная</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Про нас</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Меню</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Мероприятия</a></li>
+            <li class="nav__menu-item"><a href="#top" class="nav__menu-link">Главная</a></li>
+            <li class="nav__menu-item"><a href="#about" class="nav__menu-link">Про нас</a></li>
+            <li class="nav__menu-item"><a href="#menu" class="nav__menu-link">Меню</a></li>
+            <li class="nav__menu-item"><a href="#review" class="nav__menu-link">Отзывы</a></li>
             <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Акции</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Отзывы</a></li>
             <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Найти нас</a></li>
           </ul>  
         </div>
@@ -51,7 +50,7 @@
     </div>
   </header>
   <section class="about">
-    <a name="about"></a>
+    <a id="about"></a>
     <div class="about__content">
       <div class="screen">
         <img src="img/about.jpg" alt="Mmmmmmm">
@@ -93,7 +92,7 @@
   </section>
   <section class="menu">
     <div class="container">
-      <a name="menu"></a>
+      <a is="menu"></a>
       <div class="menu__item">
         <div class="slider">
           <div class="slider__item">
@@ -112,13 +111,13 @@
         <div class="menu__info">
           <h2 class="menu__info-tittle">Меню</h2>
           <p class="menu__info-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, saepe.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusantium!
+            Наш ресторан согревает теплом и добродушием каждого посетителя, – а блюда, представленные в меню, радуют ваш желудок, наполняют организм энергией и дарят хорошее настроение. 
+          </p>
+          <p class="menu__info-text">
+            Роллы, паста, супы, закуски – эти и многие другие блюда лучших Нежинских поваров давно стали частью нашего заведения и пришлись по вкусу многим гурманам.
+          </p>
+          <p class="menu__info-text">
+            Гармоничное сочетание изысканных блюд в меню поражает своим многообразием и позволяет без труда удовлетворять запросы наших гостей.
           </p>
           <div class="menu__info-btn">
             <a href="#">Посмотреть меню</a>
@@ -127,20 +126,79 @@
       </div>
     </div>
   </section>
-  <section class="events">
+  <section class="review">
+    <a id="review"></a>
     <div class="container">
-      <div class="events__info">
-        <h2 class="events__info-tittle">Мероприятия</h2>
-        <p class="events__info-subTittle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, sed.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, corrupti.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, eius.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, neque!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, necessitatibus.
+      <div class="review__info">
+        <h2 class="review__info-tittle">Отзывы</h2>
+        <p class="review__info-subTittle">
+          <a href="https://objor.com/23644-restoran-veranda.html">Посмотреть все отзывы</a>
         </p>
+      </div>
+      <div class="reviewSlider">
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Елена</h3>
+          <p class="reviewSlider__item-data">28 сентября 2019 20:07</p>
+          <p class="reviewSlider__item-text">Люблю это заведение. Здесь всегда так просторно и светло. Удобные диванчики, оригинальные светильники, цвет стен и потолка. Очень класный интерьер. Вот ради него одного можно сюда ходить!)) Шучу))
+              Также вкусная кухня (особенно нравятся роллы) Ценовой диапазон, я бы сказала, средний.
+              Обслуживанием всегда оставалась довольна. Девочки внимательны к гостям.
+              Как дополнительные бонусы это балкон ;) разные акции и интересности для гостей.
+              Ходила и буду ходить к вам. Спасибо :)
+              10/10</p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Владислав Поливко</h3>
+          <p class="reviewSlider__item-data">24 июня 2019 08:20</p>
+          <p class="reviewSlider__item-text">
+            Чудове обслуговування, смачні страви.
+          </p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Ljubov Rodriguez</h3>
+          <p class="reviewSlider__item-data">16 мая 2019 00:29</p>
+          <p class="reviewSlider__item-text">Інтер'єр: просторо, світло. Можна вибрати місця хоч на підвищенні, хоч в центрі залу, скрізь однаково комфортно. 
+            Дуже широкі і м'які дивани дозволяють розслабитися і відчути, що ти прийшов сюди дійсно відпочити, а не просто перекусити. 
+            Персонал ввічливий. Кухня цілком прийнятна, іноді навіть дуже смачна. 
+            Рекомендую ресторан "Веранда" для сімейного та дружнього відпочинку.
+          </p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Ruslan Rodriguez</h3>
+          <p class="reviewSlider__item-data">1 апреля 2019 15:14</p>
+          <p class="reviewSlider__item-text">десерти -- вищий клас. непоганий інтер'єр, а таке доречне використання плазмових ТВ взагалі вперше бачу: показують природу або вогнище в каміні. браво! уважний персонал. Загалом, смачно, приємна атмосфера і пристойна публіка. місце недешеве але того варте.</p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Владислав Ридзель</h3>
+          <p class="reviewSlider__item-data">22 февраля 2019 23:07</p>
+          <p class="reviewSlider__item-text">Чудовый ресторан, найсмачнішмй цезарь в місті, привітний персонал)</p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Алексей Козаченко</h3>
+          <p class="reviewSlider__item-data">15 февраля 2019 15:12</p>
+          <p class="reviewSlider__item-text">Милый ресторанчик, очень вкусно готовят, большие порции. три блюда практически невозможно освоить разве что если растянуть удовольствие во времени)))</p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Денис Ушкалов</h3>
+          <p class="reviewSlider__item-data">22 ноября 2019 18:48</p>
+          <p class="reviewSlider__item-text">Очень уютное место. Приятный обслуживающий персонал и вкусные блюда. Место, в котором "отдохнуть для души" самое то. Рекомендую!=)</p>
+        </div>
+        <div class="reviewSlider__item">
+          <h3 class="reviewSlider__item-tittle">Василий Цапок</h3>
+          <p class="reviewSlider__item-data">10 октября 2019 14:22</p>
+          <p class="reviewSlider__item-text">Дуже приємне місце. Великий зал з простим інтер'єром без недоречних рюшиків і подібних штук. Кухня смачна, обслуговування хороше, ціни цілком демократичні. Сподобалося
+            </p>
+        </div>
       </div>
     </div>
   </section>
-  
+  <section class="findUs">
+    <div class="container">
+      <h2 class="findUs__tittle">Мы на карте</h2>
+      <div class="findUs__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10033.29175329021!2d31.8867571!3d51.0471246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xffaa58bcd1b7ac53!2z0KDQtdGB0YLQvtGA0LDQvSAiVmVyYW5kYSI!5e0!3m2!1sru!2sua!4v1574087702136!5m2!1sru!2sua" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </section>
   
   
   
