@@ -1,4 +1,21 @@
 $(function(){
+    $(window).scroll(function(){
+      if ($(this).scrollTop() >= 350) {
+        $('.info__tittle, .info__subtittle').addClass('info_show');
+      }
+      else {
+        $('.info__tittle, .info__subtittle').removeClass('info_show');
+      }
+    });
+    $(window).scroll(function(){
+      if ($(this).scrollTop() >= 850) {
+        $('.info__list').addClass('info_show');
+      }
+      else {
+        $('.info__list').removeClass('info_show');
+      }
+    });
+
     $('.top_link').on('click', function(e){
         $('html,body').stop().animate({ scrollTop: $('#top').offset().top }, 1000);
         e.preventDefault();
