@@ -32,12 +32,12 @@
           <a href="#" class="burger animated bounceInRight delay-2s"><span class="burger__item"></span></a>
           <ul class="nav__menu-list" id="menu">
             <img src="img/logo.png" alt="Веранда">
-            <li class="nav__menu-item"><a href="#top" class="nav__menu-link">Главная</a></li>
-            <li class="nav__menu-item"><a href="#about" class="nav__menu-link">Про нас</a></li>
-            <li class="nav__menu-item"><a href="#menu" class="nav__menu-link">Меню</a></li>
-            <li class="nav__menu-item"><a href="#review" class="nav__menu-link">Отзывы</a></li>
+            <li class="nav__menu-item"><a href="#top" class="nav__menu-link top_link">Главная</a></li>
+            <li class="nav__menu-item"><a href="#about" class="nav__menu-link about_link">Про нас</a></li>
+            <li class="nav__menu-item"><a href="#menu" class="nav__menu-link menu_link">Меню</a></li>
+            <li class="nav__menu-item"><a href="#review" class="nav__menu-link review_link">Отзывы</a></li>
             <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Акции</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Найти нас</a></li>
+            <li class="nav__menu-item"><a href="#map" class="nav__menu-link map_link">Найти нас</a></li>
           </ul>  
         </div>
       </div>
@@ -45,12 +45,15 @@
         <p class="header__info-tittle animated bounceInUp delay-3s">Ресторан <span>&</span> Бар</p>
       </div>
       <div class="arrow">
-          <a href="#about"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-2s"></i></a>
+          <a href="#about" class="arrow_link"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-2s"></i></a>
       </div>
     </div>
   </header>
   <section class="about">
     <a id="about"></a>
+    <div class="capuch-bg"></div>
+    <div class="shamp-bg"></div>
+    <div class="sushi-bg"></div>
     <div class="about__content">
       <div class="screen">
         <img src="img/about.jpg" alt="Mmmmmmm">
@@ -59,7 +62,7 @@
         <div class="container">
           <h2 class="info__tittle">Про нас</h2>
           <p class="info__subtittle">
-            Ресторан Веранда расположен в Торговом Центре "Нежин". 
+            Ресторан Веранда расположен в Торговом Центре "Нежин-city". 
             Просторный зал, европейский стиль интерьера, светлые тона мебели, вид – на живописный парк. 
             Все это дарит гостям ощущение свободы и легкости.
           </p>
@@ -91,8 +94,8 @@
     </div>
   </section>
   <section class="menu">
+    <a id="menu_1"></a>
     <div class="container">
-      <a is="menu"></a>
       <div class="menu__item">
         <div class="slider">
           <div class="slider__item">
@@ -114,13 +117,13 @@
             Наш ресторан согревает теплом и добродушием каждого посетителя, – а блюда, представленные в меню, радуют ваш желудок, наполняют организм энергией и дарят хорошее настроение. 
           </p>
           <p class="menu__info-text">
-            Роллы, паста, супы, закуски – эти и многие другие блюда лучших Нежинских поваров давно стали частью нашего заведения и пришлись по вкусу многим гурманам.
+            Роллы, паста, супы, закуски – эти и многие другие блюда лучших поваров давно стали частью нашего заведения и пришлись по вкусу многим гурманам.
           </p>
           <p class="menu__info-text">
             Гармоничное сочетание изысканных блюд в меню поражает своим многообразием и позволяет без труда удовлетворять запросы наших гостей.
           </p>
           <div class="menu__info-btn">
-            <a href="#">Посмотреть меню</a>
+            <a href="#" class="show__menu">Посмотреть меню</a>
           </div>
         </div>
       </div>
@@ -189,26 +192,75 @@
             </p>
         </div>
       </div>
+      <div class="sliderNav">
+        <div class="sliderNav__item">
+          <i class="far fa-dot-circle active"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-dot-circle"></i>
+        </div>
+      </div>
     </div>
   </section>
   <section class="findUs">
+    <a id="map"></a>
     <div class="container">
       <h2 class="findUs__tittle">Мы на карте</h2>
+      <p class="findUs__subTittle">Адресс:
+          Г.Нежин, ул.Батюка 9, торговый центр "Нежин-city", 2 этаж.
+          Номер телефона: +380683871760</p>
       <div class="findUs__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10033.29175329021!2d31.8867571!3d51.0471246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xffaa58bcd1b7ac53!2z0KDQtdGB0YLQvtGA0LDQvSAiVmVyYW5kYSI!5e0!3m2!1sru!2sua!4v1574087702136!5m2!1sru!2sua" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <img src="img/logo.png" alt="veranda" class="footer__logo">
+      <div class="footer__item">
+        <div class="footer__item-menu">
+          <p>Карта сайта:</p>
+          <a href="#top" class="top_link">Главная</a>
+          <a href="#about" class="about_link">Про Нас</a>
+          <a href="#menu" class="menu_link">Наше меню</a>
+          <a href="#review" class="review_link">Отзывы</a>
+          <a href="№">Акции</a>
+          <a href="#map" class="map_link">Найти нас</a>
+        </div>
+        <div class="footer__item-social">
+          <p>Мы в соцсетях:</p>
+          <a href="https://www.instagram.com/veranda.nizhyn/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/pages/%D0%92%D0%B5%D1%80%D0%B0%D0%BD%D0%B4%D0%B0-%D0%9D%D1%96%D0%B6%D0%B8%D0%BD/321902631709132"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://vk.com/awesom_milosh"><i class="fab fa-vk"></i></a>
+        </div>
+        <div class="footer__item-location">
+          <p>Адресс:</p>
+          <p>Г.Нежин, ул.Батюка 9, 
+            торговый центр "Нежин-city", 
+            2 этаж.
+            Номер телефона: 
+            +380683871760</p>
+        </div>
+      </div>
+      <div class="coop">
+        <span>Denis Ushkalov corp.</span>
+      </div>
+    </div>  
   </section>
   
   
   
   
   <div class="bottom__panel animated slideInUp delay-4s">
-    <a href="#" class="callback">Cвязаться с нами</a>
+    <a href="tel:+380683871760" class="callback">Cвязаться с нами</a>
     <div class="social">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-vk"></i></a>
+      <a href="https://www.instagram.com/veranda.nizhyn/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/pages/%D0%92%D0%B5%D1%80%D0%B0%D0%BD%D0%B4%D0%B0-%D0%9D%D1%96%D0%B6%D0%B8%D0%BD/321902631709132"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://vk.com/awesom_milosh"><i class="fab fa-vk"></i></a>
     </div>
   </div>
 
