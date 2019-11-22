@@ -58,7 +58,9 @@ $(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      asNavFor: '.sliderNav__item'
+      asNavFor: '.sliderNav__item',
+      fade: true,
+      speed: 500
   });
   $('.sliderNav__item').slick ({
       slidesToShow: 8,
@@ -104,7 +106,7 @@ $(function(){
       prevArrow: '<i class="fas fa-chevron-circle-left arrow__left"></i>'
     });
   // Кнопка меню
-  $('.show__menu').click(function(){
-      alert('Да не готово пока!');
-  });  
+  // $('.show__menu').click(function(){
+  //     alert('Да не готово пока!');
+  // });  
 });
