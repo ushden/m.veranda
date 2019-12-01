@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ресторан & Бар "Веранда"</title>
-  <link href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
   <script src="https://kit.fontawesome.com/9f83d95e6b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <!-- Preloader -->
   <div id="preloader">
-    <span>Идет загрузка...</span>
     <span id="anim"></span>
   </div>
   <header class="header">
@@ -32,60 +30,75 @@
     <div class="container">
       <div class="nav">
         <div class="nav__logo">
-          <img src="img/logo.png" alt="Веранда" class="animated bounceInLeft delay-5s">
+          <img src="img/logo.png" alt="Веранда" class="animated bounceInLeft delay-3s">
+        </div>
+        <div class="nav__desk animated bounceInRight delay-3s">
+          <ul class="nav__desk-list">
+            <li class="nav__desk-item"><a href="#top" class="nav__desk-link top_link">Главная</a></li>
+            <li class="nav__desk-item"><a href="#about" class="nav__desk-link about_link">Про нас</a></li>
+            <li class="nav__desk-item"><a href="#share" class="nav__desk-link share_link">Акции</a></li>
+            <li class="nav__desk-item"><a href="#menu" class="nav__desk-link menu_link">Меню</a></li>
+            <li class="nav__desk-item"><a href="#review" class="nav__desk-link review_link">Отзывы</a></li>
+            <li class="nav__desk-item"><a href="#map" class="nav__desk-link map_link">Найти нас</a></li>
+          </ul>
         </div>
         <div class="nav__menu">
-          <a href="#" class="burger animated bounceInRight delay-5s"><span class="burger__item"></span></a>
+          <a href="#" class="burger animated bounceInRight delay-3s"><span class="burger__item"></span></a>
           <ul class="nav__menu-list" id="menu">
             <img src="img/logo.png" alt="Веранда">
             <li class="nav__menu-item"><a href="#top" class="nav__menu-link top_link">Главная</a></li>
             <li class="nav__menu-item"><a href="#about" class="nav__menu-link about_link">Про нас</a></li>
+            <li class="nav__menu-item"><a href="#share" class="nav__menu-link share_link">Акции</a></li>
             <li class="nav__menu-item"><a href="#menu" class="nav__menu-link menu_link">Меню</a></li>
             <li class="nav__menu-item"><a href="#review" class="nav__menu-link review_link">Отзывы</a></li>
-            <li class="nav__menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav__menu-link">Акции</a></li>
             <li class="nav__menu-item"><a href="#map" class="nav__menu-link map_link">Найти нас</a></li>
           </ul>  
         </div>
       </div>
       <div class="header__info">
-        <p class="header__info-tittle animated bounceInUp delay-5s">Ресторан <span>&</span> Бар</p>
+        <h1 class="header__info-tittle animated bounceInUp delay-3s">Ресторан <span>&</span> Бар</h1>
       </div>
       <div class="arrow">
-          <a href="#about" class="arrow_link"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-2s"></i></a>
+          <a href="#about" class="arrow_link about_link"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-5s"></i></a>
       </div>
     </div>
   </header>
+  
+  
+  <!--  ПРО НАС ==================================================================================== -->
   <section class="about">
     <a id="about"></a>
-    <div class="about__content">
-      <div class="screen">
-        <img src="img/about.jpg" alt="Mmmmmmm">
-      </div>
-      <div class="info">
-        <div class="container">
-          <h2 class="info__tittle">Про нас</h2>
-          <p class="info__subtittle">
+    <div class="becon-bg"></div>
+    <div class="container">
+      <div class="about__content">
+        <div class="info">
+          <h2 class="info__tittle">Наша</h2>
+          <h3 class="info__subtittle">история</h3>
+          <p class="info__text">
             Ресторан Веранда расположен в Торговом Центре "Нежин-city". 
             Просторный зал, европейский стиль интерьера, светлые тона мебели, вид – на живописный парк. 
             Все это дарит гостям ощущение свободы и легкости.
           </p>
-          <p class="info__subtittle">
+          <p class="info__text">
             Главный зал ресторана оформлен сдержанно и элегантно.
             Здесь можно достойно организовать любое мероприятие: деловую встречу, романтическое свидание, корпоративный банкет, свадебную церемонию, семейный праздник или детский день рождения.
           </p>
-          <p class="info__subtittle">
+          <p class="info__text">
             Зал рассчитан на 100 человек. В теплое время года, работает терраса с прекрасным видом на город. 
           </p>
-          <ul class="info__list info_show sugar-bg"><span>Ресторан предлагает:</span>
-            <li class="info__list-item">европейскую кухню по классическим рецептам</li>
-            <li class="info__list-item">японские блюда с оригинальной подачей</li>
-            <li class="info__list-item">авторские десерты от шеф-кондитера</li>
-            <li class="info__list-item">лучшую коллекцию вин в городе</li>
-            <li class="info__list-item">чайную и кофейную карту</li>
-            <li class="info__list-item">торты на заказ</li>
-            <li class="info__list-item">проведение банкетов, свадеб</li>
-            <li class="info__list-item">проведение детских праздников</li>
-            <li class="info__list-item">проведение бизнес-мероприятий</li>
+          <a href="#info__popup" class="info__btn">Узнать подробнее</a>
+          <div id="info__popup" class="white-popup mfp-hide">
+            <img src="img/sushi.png" alt="Syshi">
+            <ul class="info__list"><span>Ресторан предлагает:</span>
+              <li class="info__list-item">европейскую кухню по классическим рецептам</li>
+              <li class="info__list-item">японские блюда с оригинальной подачей</li>
+              <li class="info__list-item">авторские десерты от шеф-кондитера</li>
+              <li class="info__list-item">лучшую коллекцию вин в городе</li>
+              <li class="info__list-item">чайную и кофейную карту</li>
+              <li class="info__list-item">торты на заказ</li>
+              <li class="info__list-item">проведение банкетов, свадеб</li>
+              <li class="info__list-item">проведение детских праздников</li>
+              <li class="info__list-item">проведение бизнес-мероприятий</li>
           </ul>
           <ul class="info__list"><span>Для гостей ресторана:</span>
             <li class="info__list-item">свободный Wi-Fi</li>
@@ -93,137 +106,101 @@
             <li class="info__list-item">англоязычные официанты</li>
           </ul>
         </div>
+        </div>
+        <div class="slider">
+          <div class="slider__item">
+            <img src="img/slider/slider1.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider2.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider3.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider4.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider5.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider6.jpg" alt="test">
+          </div>
+          <div class="slider__item">
+            <img src="img/slider/slider7.jpg" alt="test">
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!--======================== АКИЦИИ НОВОСТИ И ПРЕДЛОЖЕНИЯ ================================= -->
+  <section class="share">
+    <a id="share"></a>
+    <div class="container">
+      <div class="share__content">
+        <div class="content__card card-1">
+          <h3 class="content__card-tittle">Акция</h3>
+          <p class="content__card-subtittle">1+1</p>
+          <p class="content__card-info">С понедельника по пятницу</p>
+          <p class="content__card-info">С 13-00 до 18-00</p>
+          <a href="#" class="content__card-btn btn-1">Узнать подробнее</a>
+        </div>
+        <div class="content__card card-2">
+          <h3 class="content__card-tittle">Лимончелло</h3>
+          <p class="content__card-subtittle">50гр + 50гр</p>
+          <p class="content__card-info">С понедельника по вщскресение</p>
+          <p class="content__card-info">С 13-00 до 23-00</p>
+          <a href="#" class="content__card-btn btn-2">Узнать подробнее</a>
+        </div>
+        <div class="content__card card-3">
+          <h3 class="content__card-tittle">Вино дня</h3>
+          <p class="content__card-subtittle">1 бутылка + 1 бутылка</p>
+          <p class="content__card-info">С понедельника по воскресение</p>
+          <p class="content__card-info">С 13-00 до 23-00</p>
+          <a href="#" class="content__card-btn btn-3">Узнать подробнее</a>
+        </div>
       </div>
     </div>
   </section>
+
+  <!--============================= MUNU ============================ -->
   <section class="menu">
     <a id="menu_1"></a>
     <div class="container">
-      <div class="menu__item">
-        <div class="slider">
-          <div class="slider__item">
-            <img src="img/meet.jpg" alt="Стейк, ммммм вкусняшка" width="100%">
-          </div>
-          <div class="slider__item">
-            <img src="img/salat.jpg" alt="Салатик ниче так" width="100%">
-          </div>
-          <div class="slider__item">
-            <img src="img/cheez.jpg" alt="Сладинького на десерт" width="100%">
-          </div>
-          <div class="slider__item">
-            <img src="img/menu.jpg" alt="Сладинького на десерт" width="100%">
-          </div>
-        </div>   
+      <div class="menu__content">
+        <div class="menu__img">
+          <img src="img/menu.jpg" alt="Меню">
+        </div>
         <div class="menu__info">
-          <h2 class="menu__info-tittle">Меню</h2>
+          <h2 class="menu__info-tittle">Наше</h2>
+          <h3 class="menu__info-subtittle">меню</h3>
           <p class="menu__info-text">
-            Наш ресторан согревает теплом и добродушием каждого посетителя, – а блюда, представленные в меню, радуют ваш желудок, наполняют организм энергией и дарят хорошее настроение. 
+            Ресторан Веранда расположен в Торговом Центре "Нежин-city". 
+            Просторный зал, европейский стиль интерьера, светлые тона мебели, вид – на живописный парк. 
+            Все это дарит гостям ощущение свободы и легкости.
           </p>
           <p class="menu__info-text">
-            Роллы, паста, супы, закуски – эти и многие другие блюда лучших поваров давно стали частью нашего заведения и пришлись по вкусу многим гурманам.
+            Главный зал ресторана оформлен сдержанно и элегантно.
+            Здесь можно достойно организовать любое мероприятие: деловую встречу, романтическое свидание, корпоративный банкет, свадебную церемонию, семейный праздник или детский день рождения.
           </p>
           <p class="menu__info-text">
-            Гармоничное сочетание изысканных блюд в меню поражает своим многообразием и позволяет без труда удовлетворять запросы наших гостей.
+            Зал рассчитан на 100 человек. В теплое время года, работает терраса с прекрасным видом на город. 
           </p>
-          <div class="menu__info-btn">
-            <a href="menu.html" class="show__menu">Посмотреть меню</a>
+          <a href="#menu__popup" class="menu__info-btn">Посмотреть меню</a>
+          <div id="menu__popup" class="white-popup mfp-hide">
+            <img src="img/coffe-bg.png" alt="">
+            <p>Почти менюха</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="review">
-    <a id="review"></a>
-    <div class="container">
-      <div class="review__info">
-        <h2 class="review__info-tittle">Отзывы</h2>
-        <p class="review__info-subTittle">
-          <a href="https://objor.com/23644-restoran-veranda.html">Посмотреть все отзывы</a>
-        </p>
-      </div>
-      <div class="reviewSlider">
-        <div class="reviewSlider__item">
-          <h3 class="reviewSlider__item-tittle">Елена</h3>
-          <p class="reviewSlider__item-data">28 сентября 2019 20:07</p>
-          <p class="reviewSlider__item-text">Люблю это заведение. Здесь всегда так просторно и светло. Удобные диванчики, оригинальные светильники, цвет стен и потолка. Очень класный интерьер. Вот ради него одного можно сюда ходить!)) Шучу))
-              Также вкусная кухня (особенно нравятся роллы) Ценовой диапазон, я бы сказала, средний.
-              Обслуживанием всегда оставалась довольна. Девочки внимательны к гостям.
-              Как дополнительные бонусы это балкон ;) разные акции и интересности для гостей.
-              Ходила и буду ходить к вам. Спасибо :)
-              10/10</p>
-        </div>
-        <div class="reviewSlider__item">
-          <h3 class="reviewSlider__item-tittle">Владислав Поливко</h3>
-          <p class="reviewSlider__item-data">24 июня 2019 08:20</p>
-          <p class="reviewSlider__item-text">
-            Чудове обслуговування, смачні страви.
-          </p>
-          <h3 class="reviewSlider__item-tittle">Ljubov Rodriguez</h3>
-          <p class="reviewSlider__item-data">16 мая 2019 00:29</p>
-          <p class="reviewSlider__item-text">Інтер'єр: просторо, світло. Можна вибрати місця хоч на підвищенні, хоч в центрі залу, скрізь однаково комфортно. 
-            Дуже широкі і м'які дивани дозволяють розслабитися і відчути, що ти прийшов сюди дійсно відпочити, а не просто перекусити. 
-            Персонал ввічливий. Кухня цілком прийнятна, іноді навіть дуже смачна. 
-            Рекомендую ресторан "Веранда" для сімейного та дружнього відпочинку.
-          </p>
-        </div>
-        <div class="reviewSlider__item">
-          
-        </div>
-        <div class="reviewSlider__item">
-          <h3 class="reviewSlider__item-tittle">Ruslan Rodriguez</h3>
-          <p class="reviewSlider__item-data">1 апреля 2019 15:14</p>
-          <p class="reviewSlider__item-text">десерти -- вищий клас. непоганий інтер'єр, а таке доречне використання плазмових ТВ взагалі вперше бачу: показують природу або вогнище в каміні. браво! уважний персонал. Загалом, смачно, приємна атмосфера і пристойна публіка. місце недешеве але того варте.</p>
-          <h3 class="reviewSlider__item-tittle">Владислав Ридзель</h3>
-          <p class="reviewSlider__item-data">22 февраля 2019 23:07</p>
-          <p class="reviewSlider__item-text">Чудовый ресторан, найсмачнішмй цезарь в місті, привітний персонал)</p>
-        </div>
-        <div class="reviewSlider__item">
-          
-        </div>
-        <div class="reviewSlider__item">
-          <h3 class="reviewSlider__item-tittle">Алексей Козаченко</h3>
-          <p class="reviewSlider__item-data">15 февраля 2019 15:12</p>
-          <p class="reviewSlider__item-text">Милый ресторанчик, очень вкусно готовят, большие порции. три блюда практически невозможно освоить разве что если растянуть удовольствие во времени)))</p>
-          <h3 class="reviewSlider__item-tittle">Денис Ушкалов</h3>
-          <p class="reviewSlider__item-data">22 ноября 2019 18:48</p>
-          <p class="reviewSlider__item-text">Очень уютное место. Приятный обслуживающий персонал и вкусные блюда. Место, в котором "отдохнуть для души" самое то. Рекомендую!=)</p>
-        </div>
-        <div class="reviewSlider__item">
-          
-        </div>
-        <div class="reviewSlider__item">
-          <h3 class="reviewSlider__item-tittle">Василий Цапок</h3>
-          <p class="reviewSlider__item-data">10 октября 2019 14:22</p>
-          <p class="reviewSlider__item-text">Дуже приємне місце. Великий зал з простим інтер'єром без недоречних рюшиків і подібних штук. Кухня смачна, обслуговування хороше, ціни цілком демократичні. Сподобалося
-            </p>
-        </div>
-      </div>
-      <div class="sliderNav">
-        <div class="sliderNav__item">
-          <i class="far fa-dot-circle active"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-          <i class="far fa-dot-circle"></i>
-        </div>
-      </div>
-    </div>
+  <section class="care">
+    <img src="img/care.jpg" alt="С любовью, для вас">
+    <h3>Мы заботимся о качестве наших блюд</h3>
   </section>
-  <section class="findUs">
-    <a id="map"></a>
-    <div class="container">
-      <h2 class="findUs__tittle">Мы на карте</h2>
-      <p class="findUs__subTittle">Адресс:
-          Г.Нежин, ул.Батюка 9, торговый центр "Нежин-city", 2 этаж.
-          Номер телефона: +380683871760</p>
-      <div class="findUs__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10033.29175329021!2d31.8867571!3d51.0471246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xffaa58bcd1b7ac53!2z0KDQtdGB0YLQvtGA0LDQvSAiVmVyYW5kYSI!5e0!3m2!1sru!2sua!4v1574087702136!5m2!1sru!2sua" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    </div>
-  </section>
+
+  <!-- ФУТЕР ============================================================== -->
   <section class="footer">
     <div class="container">
       <img src="img/logo.png" alt="veranda" class="footer__logo">
@@ -233,8 +210,8 @@
           <a href="#top" class="top_link">Главная</a>
           <a href="#about" class="about_link">Про Нас</a>
           <a href="#menu" class="menu_link">Наше меню</a>
+          <a href="№">Галерея</a>
           <a href="#review" class="review_link">Отзывы</a>
-          <a href="№">Акции</a>
           <a href="#map" class="map_link">Найти нас</a>
         </div>
         <div class="footer__item-social">
@@ -261,14 +238,13 @@
   
   
   
-  <div class="bottom__panel animated slideInUp delay-2s">
+  <!-- <div class="bottom__panel animated slideInUp delay-2s">
     <a href="tel:+380683871760" class="callback">Cвязаться с нами</a>
     <div class="social">
       <a href="https://www.instagram.com/veranda.nizhyn/"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/pages/%D0%92%D0%B5%D1%80%D0%B0%D0%BD%D0%B4%D0%B0-%D0%9D%D1%96%D0%B6%D0%B8%D0%BD/321902631709132"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://vk.com/awesom_milosh"><i class="fab fa-vk"></i></a>
     </div>
-  </div>
+  </div> -->
 
 
   
