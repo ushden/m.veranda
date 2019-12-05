@@ -1,4 +1,13 @@
 $(function(){
+  // Фото меню
+  $('.foto-1').magnificPopup({
+    type: 'image',
+    zoom: {
+        enabled: true,
+        duration: 500 
+    }
+    });
+  // Кнопка меню
   $('.info__btn').magnificPopup({
     type: 'inline'
   });
@@ -24,6 +33,16 @@ $(function(){
         }
       },
     ]
+  });
+
+  // Слайдер на отзывах 
+  $('.rewies__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<i class="fas fa-chevron-left reweis__arrow-left"></i>',
+    nextArrow: '<i class="fas fa-chevron-right reweis__arrow-right"></i>'
   });
 
   // Прелоадер
@@ -67,14 +86,14 @@ $(function(){
       $('html,body').stop().animate({ scrollTop: $('#menu_1').offset().top }, 1000);
       e.preventDefault();
     });
-//   $('.map_link').on('click', function(e){
-//       $('html,body').stop().animate({ scrollTop: $('#map').offset().top }, 1000);
-//       e.preventDefault();
-//     });
-//   $('.header__slick-link').on('click', function(e){
-//       $('html,body').stop().animate({ scrollTop: $('#top').offset().top }, 1000);
-//       e.preventDefault();
-//     });
+  $('.rewiev_link').on('click', function(e){
+      $('html,body').stop().animate({ scrollTop: $('#rewiev').offset().top }, 1000);
+      e.preventDefault();
+    });
+  $('.map_link').on('click', function(e){
+      $('html,body').stop().animate({ scrollTop: $('#map').offset().top }, 1000);
+      e.preventDefault();
+    });
 //   $('.arrow_link').on('click', function(e){
 //       $('html,body').stop().animate({ scrollTop: $('#about').offset().top }, 1000);
 //       e.preventDefault();
