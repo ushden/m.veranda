@@ -59,7 +59,7 @@ $(function(){
     $preloader = $('#preloader'),
     $loader = $preloader.find('#anim');
     $loader.fadeOut();
-    $preloader.delay(2000).fadeOut('slow');
+    $preloader.delay(1000).fadeOut('slow');
   });
 //   // появление блоков при прокрутке
 //   $(window).scroll(function(){
