@@ -1,6 +1,6 @@
 $(function(){
   // Фото меню
-  $('.foto-1').magnificPopup({
+  $('.foto-1  ').magnificPopup({
     type: 'image',
     zoom: {
         enabled: true,
@@ -11,7 +11,16 @@ $(function(){
   $('.info__btn').magnificPopup({
     type: 'inline'
   });
-  $('.menu__info-btn').magnificPopup({
+  // Кнопка на акции
+  $('.btn-1').magnificPopup({
+    type: 'inline'
+  });
+  // кнопка на меропр.
+  $('.btn-2').magnificPopup({
+    type: 'inline'
+  });
+  // банкеты
+  $('.btn-3').magnificPopup({
     type: 'inline'
   });
   // ============================= СЛАЙДЕР =======================================
@@ -94,10 +103,6 @@ $(function(){
       $('html,body').stop().animate({ scrollTop: $('#map').offset().top }, 1000);
       e.preventDefault();
     });
-//   $('.arrow_link').on('click', function(e){
-//       $('html,body').stop().animate({ scrollTop: $('#about').offset().top }, 1000);
-//       e.preventDefault();
-//     });
   // Кнопка меню на моб.
   $('.burger').click(function(event){
       event.preventDefault();
@@ -114,13 +119,13 @@ $(function(){
       $('.header__info').removeClass('header__info-hidden');
       $('.arrow').removeClass('arrow__hidden');
   });
-//   // Верхняя липкая панель
-//   $(window).scroll(function(){
-//       if ($(this).scrollTop() > 30) {
-//           $('#header__slick').addClass('header__slick-show');
-//       }
-//       else {
-//           $('#header__slick').removeClass('header__slick-show');
-//       }
-//   }); 
+  // Кнопка на верх
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 200) {
+          $('.buttonOnTop').addClass('buttonOnTop-show');
+      }
+      else {
+          $('.buttonOnTop').removeClass('buttonOnTop-show');
+      }
+  }); 
 });
