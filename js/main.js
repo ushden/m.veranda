@@ -55,14 +55,12 @@ $(function(){
   });
   // появление блоков при прокрутке
   $(window).scroll(function(){
-    if ($(this).scrollTop() >= 300) {
+    if ($(this).scrollTop() >= 150) {
       $('.about').addClass('about__show');
     }
     else {
       $('.about').removeClass('about__show');
     }
-  });
-  $(window).scroll(function(){
     if ($(this).scrollTop() >= 500) {
       $('.about').addClass('about__trl');
     }
@@ -71,43 +69,17 @@ $(function(){
     }
   });
   $(window).scroll(function(){
-    if ($(this).scrollTop() >= 800) {
-      $('.slider').addClass('slider__show');
+    if ($(this).scrollTop() >= 950) {
+      $('.share').addClass('share_show');
     }
     else {
-      $('.slider').removeClass('slider__show');
+      $('.share').removeClass('share_show');
     }
-  });
-  $(window).scroll(function(){
-    if ($(this).scrollTop() >= 900) {
-      $('.slider').addClass('slider__trl');
+    if ($(this).scrollTop() >= 1100) {
+      $('.share').addClass('share_normal');
     }
     else {
-      $('.slider').removeClass('slider__trl');
-    }
-  });
-  $(window).scroll(function(){
-    if ($(this).scrollTop() >= 900) {
-      $('.card-1').addClass('card__show');
-    }
-    else {
-      $('.card-1').removeClass('card__show');
-    }
-  });
-  $(window).scroll(function(){
-    if ($(this).scrollTop() >= 900) {
-      $('.card-2').addClass('card__show');
-    }
-    else {
-      $('.card-2').removeClass('card__show');
-    }
-  });
-  $(window).scroll(function(){
-    if ($(this).scrollTop() >= 900) {
-      $('.card-3').addClass('card__show');
-    }
-    else {
-      $('.card-3').removeClass('card__show');
+      $('.share').removeClass('share_normal');
     }
   });
   // Прокрутка к якорю
