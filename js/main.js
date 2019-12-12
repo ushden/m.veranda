@@ -1,12 +1,4 @@
 $(function(){
-  // Фото меню
-  $('.foto-1  ').magnificPopup({
-    type: 'image',
-    zoom: {
-        enabled: true,
-        duration: 500 
-    }
-    });
   // Кнопка меню
   $('.info__btn').magnificPopup({
     type: 'inline'
@@ -59,26 +51,66 @@ $(function(){
     $preloader = $('#preloader'),
     $loader = $preloader.find('#anim');
     $loader.fadeOut();
-    $preloader.delay(1000).fadeOut('slow');
+    $preloader.delay(100).fadeOut('slow');
   });
-//   // появление блоков при прокрутке
-//   $(window).scroll(function(){
-//     if ($(this).scrollTop() >= 350) {
-//       $('.info__tittle, .info__subtittle').addClass('info_show');
-//     }
-//     else {
-//       $('.info__tittle, .info__subtittle').removeClass('info_show');
-//     }
-//   });
-//   $(window).scroll(function(){
-//     if ($(this).scrollTop() >= 850) {
-//       $('.info__list').addClass('info_show');
-//     }
-//     else {
-//       $('.info__list').removeClass('info_show');
-//     }
-//   });
-//   // Прокрутка к якорю
+  // появление блоков при прокрутке
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 300) {
+      $('.about').addClass('about__show');
+    }
+    else {
+      $('.about').removeClass('about__show');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 500) {
+      $('.about').addClass('about__trl');
+    }
+    else {
+      $('.about').removeClass('about__trl');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 800) {
+      $('.slider').addClass('slider__show');
+    }
+    else {
+      $('.slider').removeClass('slider__show');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 900) {
+      $('.slider').addClass('slider__trl');
+    }
+    else {
+      $('.slider').removeClass('slider__trl');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 900) {
+      $('.card-1').addClass('card__show');
+    }
+    else {
+      $('.card-1').removeClass('card__show');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 900) {
+      $('.card-2').addClass('card__show');
+    }
+    else {
+      $('.card-2').removeClass('card__show');
+    }
+  });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= 900) {
+      $('.card-3').addClass('card__show');
+    }
+    else {
+      $('.card-3').removeClass('card__show');
+    }
+  });
+  // Прокрутка к якорю
   $('.top_link').on('click', function(e){
       $('html,body').stop().animate({ scrollTop: $('#top').offset().top }, 1000);
       e.preventDefault();
@@ -121,7 +153,7 @@ $(function(){
   });
   // Кнопка на верх
   $(window).scroll(function(){
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 400) {
           $('.buttonOnTop').addClass('buttonOnTop-show');
       }
       else {
