@@ -68,20 +68,6 @@ $(function(){
       $('.about').removeClass('about__trl');
     }
   });
-  $(window).scroll(function(){
-    if ($(this).scrollTop() >= 950) {
-      $('.share').addClass('share_show');
-    }
-    else {
-      $('.share').removeClass('share_show');
-    }
-    if ($(this).scrollTop() >= 1100) {
-      $('.share').addClass('share_normal');
-    }
-    else {
-      $('.share').removeClass('share_normal');
-    }
-  });
   // Прокрутка к якорю
   $('.top_link').on('click', function(e){
       $('html,body').stop().animate({ scrollTop: $('#top').offset().top }, 1000);

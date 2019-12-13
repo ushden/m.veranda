@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="header__info">
-        <h1 class="header__info-tittle animated bounceInUp delay-2s">Ресторан <span>&</span> Бар</h1>
+        <h1 class="header__info-tittle animated bounceInUp delay-3s">Ресторан <span>&</span> Бар</h1>
       </div>
       <div class="arrow">
           <a href="#about" class="arrow_link about_link"><i class="fas fa-angle-double-down animated infinite fadeOutDown delay-3s slow"></i></a>
@@ -157,7 +157,7 @@
     <a id="share"></a>
     <div class="container">
       <div class="share__content">
-        <div class="content__card card-1">
+        <div class="content__card card-1 wow bounceInLeft" data-wow-delay=".5s">
           <h3 class="content__card-tittle">Акции</h3>
           <p class="content__card-subtittle">Для вас мы подготовили самые выгодные предложения</p>
           <a href="#share-popup" class="content__card-btn btn-1">Узнать подробнее</a>
@@ -165,7 +165,7 @@
             <p>Какая то инфа</p>
           </div>
         </div>
-        <div class="content__card card-2">
+        <div class="content__card card-2 wow bounceInUp" data-wow-delay=".7s">
           <h3 class="content__card-tittle">Меропреятия</h3>
           <p class="content__card-subtittle">Профессиональное обслуживание любого банкета и мероприятия</p>
           <a href="#banket-popup" class="content__card-btn btn-2">Узнать подробнее</a>
@@ -173,7 +173,7 @@
             <p>тоже что то придумать</p>
           </div>
         </div>
-        <div class="content__card card-3">
+        <div class="content__card card-3 wow bounceInRight" data-wow-delay=".9s">
           <h3 class="content__card-tittle">Правила</h3>
           <p class="content__card-subtittle">В целях комфортного и безопасного проведения времени</p>
           <a href="#party-popup" class="content__card-btn btn-3">Узнать подробнее</a>
@@ -193,10 +193,10 @@
     <a id="menu_1"></a>
     <div class="container">
       <div class="menu__content">
-        <div class="menu__img">
+        <div class="menu__img wow bounceInLeft" data-wow-delay=".4s">
           <img src="img/menu.jpg" alt="Меню">
         </div>
-        <div class="menu__info">
+        <div class="menu__info wow bounceInRight" data-wow-delay=".5s">
           <h2 class="menu__info-tittle">Наше</h2>
           <h3 class="menu__info-subtittle">меню</h3>
           <p class="menu__info-text">
@@ -234,7 +234,7 @@
   <a id="rewiev"></a>
   <div class="container">
     <div class="rewies__content">
-      <div class="rewies__text">
+      <div class="rewies__text wow bounceInLeft" data-wow-delay=".4s">
         <h2 class="rewies__text-tittle">Отзывы</h2>
         <h3 class="rewies__text-subtittle">Наших гостей</h3>
         <p class="rewies__text-text">
@@ -245,7 +245,7 @@
         </p>
         <a href="https://objor.com/23644-restoran-veranda.html " class="rewies__text-btn">Оставть отзыв</a>
       </div>
-      <div class="rewies__slider">
+      <div class="rewies__slider wow bounceInLeft" data-wow-delay=".5s">
         <div class="rewies__slider-item">
           <h4>Елена</h4>
           <span>28 сентября 2019 20:07</span>
@@ -360,7 +360,11 @@
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/wow.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
